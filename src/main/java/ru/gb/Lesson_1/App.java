@@ -8,10 +8,22 @@ public class App {
                 new Robot("Голиаф", 100, 1)
         };
 
-        Track track = new Track(250);
-        for (Runner runner:runners) {
-            track.overcome(runner);
+        Obstacle[] obstacles = {
+                new Track(100),
+                new Wall(2),
+                new Track(300),
+                new Wall(2),
+                new Track(350),
+                new Wall(3)
         };
+
+        for (Runner runner:runners) {
+            for (Obstacle obstacle: obstacles) {
+                if (!obstacle.overcome(runner)) {
+                    break;
+                }
+            }
+        }
 
     }
 }

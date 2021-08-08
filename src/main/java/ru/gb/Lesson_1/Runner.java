@@ -1,6 +1,6 @@
 package ru.gb.Lesson_1;
 
 public interface Runner {
-    public boolean run(int distance);
-    public boolean jump(int height);
+    boolean run(int distance);
+    boolean jump(int height);
 }

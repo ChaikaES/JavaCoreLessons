@@ -1,6 +1,6 @@
 package ru.gb.Lesson_1;
 
-public class Track {
+public class Track implements Obstacle {
     int distance;
 
     Track(int dist) {
