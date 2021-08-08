@@ -1,6 +1,6 @@
 package ru.gb.Lesson_1;
 
-public class Robot {
+public class Robot implements Runner {
     int run_limit;
     int jump_limit;
     String name;
