@@ -20,4 +20,12 @@ public class Box<T extends Fruit> {
     public void put(T element){
         elements.add(element);
     }
+
+    public boolean compare(Box<?> another) {
+        if (this.getWeight() == another.getWeight()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

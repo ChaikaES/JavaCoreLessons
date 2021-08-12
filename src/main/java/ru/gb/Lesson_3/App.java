@@ -15,5 +15,7 @@ public class App {
 
         System.out.println(box1.getWeight());
         System.out.println(box2.getWeight());
+
+        System.out.println(box1.compare(box2));
     }
 }
