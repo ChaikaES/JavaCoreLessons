@@ -28,4 +28,12 @@ public class Box<T extends Fruit> {
             return false;
         }
     }
+
+    public void transfer(Box<T> another) {
+        for (T element: elements) {
+            another.put(element);
+        }
+
+        elements.clear();
+    }
 }
